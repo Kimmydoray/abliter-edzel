@@ -23,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/opening-hours', [OpeningHoursController::class, 'index']);
 Route::post('/opening-hours', [OpeningHoursController::class, 'store']);
 Route::get('/store-status', [StoreStatusController::class, 'status']);
+Route::post('/check-store-status', [StoreStatusController::class, 'checkStoreStatus']);
